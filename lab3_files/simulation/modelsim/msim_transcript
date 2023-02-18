@@ -1,0 +1,249 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do lab2_run_msim_rtl_verilog.do
+# if ![file isdirectory lab2_iputf_libs] {
+# 	file mkdir lab2_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying D:/Intel/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo"
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:32 on Jan 04,2023
+# vlog -reportprogress 300 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 19:22:32 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/de0_nano_soc_baseline.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:32 on Jan 04,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 19:22:32 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/ip {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/ip/fifo.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:32 on Jan 04,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/ip" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/ip/fifo.v 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 19:22:33 on Jan 04,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/receiver.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:33 on Jan 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/receiver.sv 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 19:22:33 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/sender.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:33 on Jan 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/sender.sv 
+# -- Compiling module sender
+# 
+# Top level modules:
+# 	sender
+# End time: 19:22:33 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/domains_intersection.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:33 on Jan 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/rtl/domains_intersection.sv 
+# -- Compiling module domains_intersection
+# 
+# Top level modules:
+# 	domains_intersection
+# End time: 19:22:33 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:22:33 on Jan 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv 
+# -- Compiling module tb_domains_intersection
+# 
+# Top level modules:
+# 	tb_domains_intersection
+# End time: 19:22:33 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_domains_intersection
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_domains_intersection 
+# Start time: 19:22:33 on Jan 04,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2685) [TFMPC] - Too few port connections for 'pll_altera_pll_altera_pll_i_1098'.  Expected 26, found 5.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/pll_sim/pll.vo(48): (vopt-2718) [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: $MODEL_TECH/../intel/verilog/src/altera_mf.v(31791): (vopt-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+# ** Warning: $MODEL_TECH/../intel/verilog/src/altera_mf.v(31791): (vopt-2718) [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "dps_extra_kick(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading sv_std.std
+# Loading work.tb_domains_intersection(fast)
+# Loading work.domains_intersection(fast)
+# Loading work.pll(fast)
+# Loading altera_lnsim_ver.altera_lnsim_functions(fast)
+# Loading altera_lnsim_ver.altera_pll(fast)
+# Loading altera_lnsim_ver.dps_extra_kick(fast)
+# Loading altera_lnsim_ver.dprio_init(fast)
+# Loading altera_lnsim_ver.altera_generic_pll_functions(fast)
+# Loading altera_lnsim_ver.generic_pll(fast)
+# Loading work.sender(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.receiver(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb_domains_intersection.u_domains_intersection.u_pll.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb_domains_intersection.u_domains_intersection.u_pll.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 199 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 2512.562814
+# Info: output_clock_low_period = 2512.562814
+# ** Note: $finish    : D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv(69)
+#    Time: 20050 ns  Iteration: 1  Instance: /tb_domains_intersection
+# 1
+# Break in Module tb_domains_intersection at D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv line 69
+add wave -position end  sim:/tb_domains_intersection/u_domains_intersection/fifo_data
+add wave -position end  sim:/tb_domains_intersection/u_domains_intersection/fifo_rdreq
+add wave -position end  sim:/tb_domains_intersection/u_domains_intersection/u_fifo/data
+run
+run
+# Causality operation skipped due to absence of debug database file
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=24.
+# Loading work.tb_domains_intersection(fast)
+# Loading work.domains_intersection(fast)
+# Loading work.pll(fast)
+# Loading altera_lnsim_ver.altera_lnsim_functions(fast)
+# Loading altera_lnsim_ver.altera_pll(fast)
+# Loading altera_lnsim_ver.dps_extra_kick(fast)
+# Loading altera_lnsim_ver.dprio_init(fast)
+# Loading altera_lnsim_ver.altera_generic_pll_functions(fast)
+# Loading altera_lnsim_ver.generic_pll(fast)
+# Loading work.sender(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.receiver(fast)
+run
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb_domains_intersection.u_domains_intersection.u_pll.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb_domains_intersection.u_domains_intersection.u_pll.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 199 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 2512.562814
+# Info: output_clock_low_period = 2512.562814
+run -all
+# ** Note: $finish    : D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv(69)
+#    Time: 20050 ns  Iteration: 1  Instance: /tb_domains_intersection
+# 1
+# Break in Module tb_domains_intersection at D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab3_files/sim/tb_domains_intersection.sv line 69
+add wave -position end  sim:/tb_domains_intersection/u_domains_intersection/u_receiver/rdata_nxt
+add wave -position end  sim:/tb_domains_intersection/u_domains_intersection/u_receiver/counter_nxt
+# End time: 19:33:06 on Jan 04,2023, Elapsed time: 0:10:33
+# Errors: 0, Warnings: 24

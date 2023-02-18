@@ -1,0 +1,4 @@
+
+
+ncvlog "D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo" 
+ncvlog "D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo"

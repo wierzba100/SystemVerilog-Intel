@@ -1,0 +1,6 @@
+
+State Machine - |de0_nano_soc_baseline|keypress_detector:u_keypress_detector|state
+Name state.WAITING_FOR_PRESS state.WAITING_FOR_RELEASE state.PRESS_DEBOUNCING 
+state.WAITING_FOR_PRESS 0 0 0 
+state.PRESS_DEBOUNCING 1 0 1 
+state.WAITING_FOR_RELEASE 1 1 0 

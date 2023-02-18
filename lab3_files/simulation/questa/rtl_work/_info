@@ -1,0 +1,190 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Student/Downloads/lab2_files/simulation/questa
+T_opt
+!s110 1671099141
+V5KL;TH]15RAJd?JEA1kM=0
+04 23 4 work tb_domains_intersection fast 0
+=1-107b441b4772-639af304-33e-fe0
+!s124 OEM10U34 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vde0_nano_soc_baseline
+Z2 !s110 1671099140
+!i10b 1
+!s100 _P_L:>?zSh0;Z<<5B4:h=3
+IeGYVMeLQ_AFcIXHH_<Y5C2
+R0
+w1671095684
+8C:/Users/Student/Downloads/lab2_files/de0_nano_soc_baseline.v
+FC:/Users/Student/Downloads/lab2_files/de0_nano_soc_baseline.v
+!i122 1
+L0 40 132
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1671099140.000000
+!s107 C:/Users/Student/Downloads/lab2_files/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files|C:/Users/Student/Downloads/lab2_files/de0_nano_soc_baseline.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/lab2_files -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdomains_intersection
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 0^NVaFi>aSzfhI;PAF15A1
+I]@VkNDVDgXlU^PPof`j;U0
+S1
+R0
+w1671098732
+8C:/Users/Student/Downloads/lab2_files/rtl/domains_intersection.sv
+FC:/Users/Student/Downloads/lab2_files/rtl/domains_intersection.sv
+!i122 5
+L0 8 70
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Student/Downloads/lab2_files/rtl/domains_intersection.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files/rtl|C:/Users/Student/Downloads/lab2_files/rtl/domains_intersection.sv|
+!i113 0
+Z8 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -sv -work work +incdir+C:/Users/Student/Downloads/lab2_files/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo
+R2
+!i10b 1
+!s100 JSl`FIfYD4NXS_C6]8=[90
+Iojdz<H11WIPa74DzZJHl>3
+R0
+w1671097594
+8C:/Users/Student/Downloads/lab2_files/ip/fifo.v
+FC:/Users/Student/Downloads/lab2_files/ip/fifo.v
+!i122 2
+L0 40 56
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Student/Downloads/lab2_files/ip/fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files/ip|C:/Users/Student/Downloads/lab2_files/ip/fifo.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/lab2_files/ip -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpll
+R2
+!i10b 1
+!s100 W8j3HlGkLd=lcz9`9^2O^3
+I1Z@K=XKK8Y5AU7cb^NN552
+R0
+w1671094918
+8C:/Users/Student/Downloads/lab2_files/pll_sim/pll.vo
+FC:/Users/Student/Downloads/lab2_files/pll_sim/pll.vo
+!i122 0
+L0 32 267
+R3
+R4
+r1
+!s85 0
+31
+!s108 1671099139.000000
+!s107 C:/Users/Student/Downloads/lab2_files/pll_sim/pll.vo|
+!s90 -reportprogress|300|C:/Users/Student/Downloads/lab2_files/pll_sim/pll.vo|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vreceiver
+R7
+R2
+!i10b 1
+!s100 WNd9nVW0i?BbHN]D6e0031
+IR:A:1>af_U`Jb`8Jl5ihU3
+S1
+R0
+Z10 w1671093428
+8C:/Users/Student/Downloads/lab2_files/rtl/receiver.sv
+FC:/Users/Student/Downloads/lab2_files/rtl/receiver.sv
+!i122 3
+L0 8 93
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Student/Downloads/lab2_files/rtl/receiver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files/rtl|C:/Users/Student/Downloads/lab2_files/rtl/receiver.sv|
+!i113 0
+R8
+R9
+R1
+vsender
+R7
+R2
+!i10b 1
+!s100 YWEIHz>4O2]G;zcMEBcXI2
+I02B3A@8f;kea;J1E<595h3
+S1
+R0
+R10
+8C:/Users/Student/Downloads/lab2_files/rtl/sender.sv
+FC:/Users/Student/Downloads/lab2_files/rtl/sender.sv
+!i122 4
+L0 8 73
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Student/Downloads/lab2_files/rtl/sender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files/rtl|C:/Users/Student/Downloads/lab2_files/rtl/sender.sv|
+!i113 0
+R8
+R9
+R1
+vtb_domains_intersection
+R7
+R2
+!i10b 1
+!s100 ^fm12X9;JYO_6hEdY?gb:2
+IF@h:A1<1RKfA@@FR]BNPM0
+S1
+R0
+R10
+8C:/Users/Student/Downloads/lab2_files/sim/tb_domains_intersection.sv
+FC:/Users/Student/Downloads/lab2_files/sim/tb_domains_intersection.sv
+!i122 6
+L0 10 77
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Student/Downloads/lab2_files/sim/tb_domains_intersection.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/lab2_files/sim|C:/Users/Student/Downloads/lab2_files/sim/tb_domains_intersection.sv|
+!i113 0
+R8
+!s92 -sv -work work +incdir+C:/Users/Student/Downloads/lab2_files/sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

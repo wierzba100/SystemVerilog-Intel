@@ -1,0 +1,335 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Student/Downloads/proj_agh.zip/simulation/questa
+T_opt
+!s110 1672912788
+VgT>T6BG_ZRAILjEN58iWV3
+04 11 4 work tb_proj_agh fast 0
+=1-107b441b4772-63b69f94-1b-390c
+!s124 OEM10U66 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vadder_gen
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1672912787
+!i10b 1
+!s100 C0]UUA`QMUf;WmVOS_<U61
+IKQ_YoFO7jg[8?;2PCDnfY1
+S1
+R0
+w1672910332
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/adder_gen.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/adder_gen.sv
+!i122 9
+L0 3 36
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1672912787.000000
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/adder_gen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/adder_gen.sv|
+!i113 0
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+valu
+R2
+R3
+!i10b 1
+!s100 ]OK;GD0;A?dGN<a;UKiK50
+IaPPdAS<AiGRH51Gz4Ln9l1
+S1
+R0
+Z9 w1672908507
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/alu.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/alu.sv
+!i122 11
+L0 1 82
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/alu.sv|
+!i113 0
+R7
+R8
+R1
+vctrl
+R2
+R3
+!i10b 1
+!s100 zQg5ehkF><dVV`CezC1_N1
+ImW0neRn>gcIQK;AOBVbPA2
+S1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/ctrl.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/ctrl.sv
+!i122 8
+L0 2 88
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/ctrl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/ctrl.sv|
+!i113 0
+R7
+R8
+R1
+vfadd
+Z10 !s110 1672912786
+!i10b 1
+!s100 ]DQ`l?ILah0CBGR?BU[4i0
+I71DMInZ_K?m]EMKK6SLFZ3
+R0
+w1672911948
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/fadd.v
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/fadd.v
+!i122 1
+L0 2 13
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1672912786.000000
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/fadd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/fadd.v|
+!i113 0
+Z12 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgen_pll
+R10
+!i10b 1
+!s100 zVFnfWW>3FNRGU8IacgHC2
+I8[SnTonRmEI57VfKNgKkH1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/ip/gen_pll/gen_pll_sim/gen_pll.vo
+FC:/Users/Student/Downloads/proj_agh.zip/ip/gen_pll/gen_pll_sim/gen_pll.vo
+!i122 0
+L0 32 264
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Student/Downloads/proj_agh.zip/ip/gen_pll/gen_pll_sim/gen_pll.vo|
+!s90 -reportprogress|300|C:/Users/Student/Downloads/proj_agh.zip/ip/gen_pll/gen_pll_sim/gen_pll.vo|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgen_ram
+R10
+!i10b 1
+!s100 OGbcd0RW1nB:V03B?308l1
+I4CmE7gYG?NfTeHAiOi[7G1
+R0
+w1672910122
+8C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram/gen_ram.v
+FC:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram/gen_ram.v
+!i122 3
+L0 40 69
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram/gen_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram|C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram/gen_ram.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vgen_ram_C
+R3
+!i10b 1
+!s100 EKR2jRz8Chc2@3BX1ge0g1
+IMUOOc_6607a`;]?ZF6ZGH0
+R0
+w1672910265
+8C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C/gen_ram_C.v
+FC:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C/gen_ram_C.v
+!i122 4
+L0 40 68
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C/gen_ram_C.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C|C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C/gen_ram_C.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_ram_C -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ngen_ram_@c
+vgen_rom
+R10
+!i10b 1
+!s100 llQdXz`8z4MESkFW<SffB3
+IV9TE4JNDJNgNPNL^T[[gN3
+R0
+w1672909293
+8C:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom/gen_rom.v
+FC:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom/gen_rom.v
+!i122 2
+L0 40 64
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom/gen_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom|C:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom/gen_rom.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/ip/gen_rom -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vmul
+R2
+R3
+!i10b 1
+!s100 jb3n33cFY7_<aUBS?kW6z3
+I`;lDG74D@7W:T84Fj28?72
+S1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/mul.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/mul.sv
+!i122 10
+L0 40 34
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/mul.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/mul.sv|
+!i113 0
+R7
+R8
+R1
+vmult_b8n
+R3
+!i10b 1
+!s100 [U:Kg_JQT8OIN@4gAZ^^b0
+Ie?>B1n4C`lW5@koD=>i8?3
+R0
+w1672911354
+8C:/Users/Student/Downloads/proj_agh.zip/db/mult_b8n.v
+FC:/Users/Student/Downloads/proj_agh.zip/db/mult_b8n.v
+!i122 5
+L0 29 21
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/db/mult_b8n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/db|C:/Users/Student/Downloads/proj_agh.zip/db/mult_b8n.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpower_ctrl
+R2
+R3
+!i10b 1
+!s100 <AE4FaUF2H8Mc_UjiXb=Y3
+I<E=D@j4IMM[WaofF@DmG:1
+S1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/power_ctrl.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/power_ctrl.sv
+!i122 7
+L0 2 37
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/power_ctrl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/power_ctrl.sv|
+!i113 0
+R7
+R8
+R1
+vproj_agh
+R2
+R3
+!i10b 1
+!s100 M_a`YWK=FeAMN5FQO1C@b1
+I9>]z43c4d>KVX_6>2THVS3
+S1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/rtl/proj_agh.sv
+FC:/Users/Student/Downloads/proj_agh.zip/rtl/proj_agh.sv
+!i122 6
+L0 40 261
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/rtl/proj_agh.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/rtl|C:/Users/Student/Downloads/proj_agh.zip/rtl/proj_agh.sv|
+!i113 0
+R7
+R8
+R1
+vtb_proj_agh
+R2
+R3
+!i10b 1
+!s100 d>YU4CSBTbUTnFN]gZh9G2
+ITU77aIk<5kaH<@QFi0ii90
+S1
+R0
+R9
+8C:/Users/Student/Downloads/proj_agh.zip/sim/tb_proj_agh.sv
+FC:/Users/Student/Downloads/proj_agh.zip/sim/tb_proj_agh.sv
+!i122 12
+L0 10 60
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student/Downloads/proj_agh.zip/sim/tb_proj_agh.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student/Downloads/proj_agh.zip/sim|C:/Users/Student/Downloads/proj_agh.zip/sim/tb_proj_agh.sv|
+!i113 0
+R7
+!s92 -sv -work work +incdir+C:/Users/Student/Downloads/proj_agh.zip/sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

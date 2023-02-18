@@ -1,0 +1,383 @@
+Analysis & Synthesis report for proj_agh
+Wed Jan 11 19:37:31 2023
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |adder_gen
+ 10. Port Connectivity Checks: "fadd:fadd_generate[31].inst_GEN"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Jan 11 19:37:31 2023       ;
+; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Revision Name                   ; proj_agh                                    ;
+; Top-level Entity Name           ; adder_gen                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 98                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA4U23C6       ;                    ;
+; Top-level entity name                                                           ; adder_gen          ; proj_agh           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Verilog Show LMF Mapping Messages                                               ; Off                ;                    ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; rtl/fadd.v                       ; yes             ; User Verilog HDL File        ; D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/fadd.v       ;         ;
+; rtl/adder_gen.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/adder_gen.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 207             ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 411             ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 2               ;
+;     -- 5 input functions                    ; 5               ;
+;     -- 4 input functions                    ; 70              ;
+;     -- <=3 input functions                  ; 334             ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 98              ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; inputA[6]~input ;
+; Maximum fan-out                             ; 48              ;
+; Total fan-out                               ; 1213            ;
+; Average fan-out                             ; 2.00            ;
++---------------------------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-------------+--------------+
+; |adder_gen                           ; 411 (0)             ; 0 (0)                     ; 0                 ; 0          ; 98   ; 0            ; |adder_gen                                 ; adder_gen   ; work         ;
+;    |fadd:fadd_generate[0].inst_GEN|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[0].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[10].inst_GEN| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[10].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[11].inst_GEN| ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[11].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[12].inst_GEN| ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[12].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[13].inst_GEN| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[13].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[14].inst_GEN| ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[14].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[15].inst_GEN| ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[15].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[16].inst_GEN| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[16].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[17].inst_GEN| ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[17].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[18].inst_GEN| ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[18].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[19].inst_GEN| ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[19].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[1].inst_GEN|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[1].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[20].inst_GEN| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[20].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[21].inst_GEN| ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[21].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[22].inst_GEN| ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[22].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[23].inst_GEN| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[23].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[24].inst_GEN| ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[24].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[25].inst_GEN| ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[25].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[26].inst_GEN| ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[26].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[27].inst_GEN| ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[27].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[28].inst_GEN| ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[28].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[29].inst_GEN| ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[29].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[2].inst_GEN|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[2].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[30].inst_GEN| ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[30].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[31].inst_GEN| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[31].inst_GEN ; fadd        ; work         ;
+;    |fadd:fadd_generate[3].inst_GEN|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[3].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[4].inst_GEN|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[4].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[5].inst_GEN|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[5].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[6].inst_GEN|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[6].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[7].inst_GEN|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[7].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[8].inst_GEN|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[8].inst_GEN  ; fadd        ; work         ;
+;    |fadd:fadd_generate[9].inst_GEN|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_gen|fadd:fadd_generate[9].inst_GEN  ; fadd        ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |adder_gen ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fadd:fadd_generate[31].inst_GEN"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 411                         ;
+;     arith             ; 391                         ;
+;         0 data inputs ; 23                          ;
+;         1 data inputs ; 253                         ;
+;         2 data inputs ; 23                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 69                          ;
+;         5 data inputs ; 1                           ;
+;     normal            ; 20                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 98                          ;
+;                       ;                             ;
+; Max LUT depth         ; 29.50                       ;
+; Average LUT depth     ; 21.71                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Wed Jan 11 19:37:23 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proj_agh -c proj_agh
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/proj_agh.sv
+    Info (12023): Found entity 1: proj_agh File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/proj_agh.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/power_ctrl.sv
+    Info (12023): Found entity 1: power_ctrl File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/power_ctrl.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/ctrl.sv
+    Info (12023): Found entity 1: ctrl File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/ctrl.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/fadd.v
+    Info (12023): Found entity 1: fadd File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/fadd.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/adder_gen.sv
+    Info (12023): Found entity 1: adder_gen File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/adder_gen.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/mul.sv
+    Info (12023): Found entity 1: mul File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/mul.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/alu.sv
+    Info (12023): Found entity 1: alu File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ip/gen_pll/gen_pll.v
+    Info (12023): Found entity 1: gen_pll File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/ip/gen_pll/gen_pll.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file ip/gen_pll/gen_pll/gen_pll_0002.v
+    Info (12023): Found entity 1: gen_pll_0002 File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/ip/gen_pll/gen_pll/gen_pll_0002.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ip/gen_rom/gen_rom.v
+    Info (12023): Found entity 1: gen_rom File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/ip/gen_rom/gen_rom.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip/gen_ram/gen_ram.v
+    Info (12023): Found entity 1: gen_ram File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/ip/gen_ram/gen_ram.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip/gen_ram_c/gen_ram_c.v
+    Info (12023): Found entity 1: gen_ram_C File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/ip/gen_ram_C/gen_ram_C.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at proj_agh.sv(200): created implicit net for "ctrl_clk" File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/proj_agh.sv Line: 200
+Info (12127): Elaborating entity "adder_gen" for the top level hierarchy
+Info (12128): Elaborating entity "fadd" for hierarchy "fadd:fadd_generate[0].inst_GEN" File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/rtl/adder_gen.sv Line: 28
+Info (286030): Timing-Driven Synthesis is running
+Warning (20013): Ignored 16 assignments for entity "gen_pll" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity gen_pll -sip ip/gen_pll/gen_pll.sip -library lib_gen_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 22.1 -entity gen_pll -sip ip/gen_pll/gen_pll.sip -library lib_gen_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity gen_pll -sip ip/gen_pll/gen_pll.sip -library lib_gen_pll was ignored
+Warning (20013): Ignored 317 assignments for entity "gen_pll_0002" -- entity does not exist in design
+Info (144001): Generated suppressed messages file D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/output_files/proj_agh.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 509 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 411 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Wed Jan 11 19:37:31 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/proj_agh.zip/output_files/proj_agh.map.smsg.
+
+

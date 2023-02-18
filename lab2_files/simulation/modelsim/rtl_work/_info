@@ -1,0 +1,114 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/simulation/modelsim
+T_opt
+Z1 !s110 1671053164
+VLDX`Col1dNU5JWc[MA1^X1
+04 6 4 work tb_pll fast 0
+=1-7085c28a0cc6-639a3f6c-14d-3474
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vde0_nano_soc_baseline
+Z3 !s110 1671053163
+!i10b 1
+!s100 z3ikYBcj]WWWXYBA9Q^CC2
+I6BgcnJ]if_BfTn`<n`Clf2
+R0
+w1670494508
+8D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v
+FD:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v
+!i122 2
+L0 40 139
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1671053163.000000
+!s107 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files|D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v|
+!i113 0
+o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vpll
+R3
+!i10b 1
+!s100 L[5;A1Vdk5U3Lz:8:m`?j1
+I;j4m?OLg72@T8GD9jX50J1
+R0
+w1670490370
+8D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo
+FD:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo
+!i122 0
+Z7 L0 32 264
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo|
+!s90 -reportprogress|300|D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vpll99
+R3
+!i10b 1
+!s100 I0Qc1BN@dIBC3`TH=bC3W0
+IjkX=fU:5dVVimWfelM7143
+R0
+w1671052903
+8D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo
+FD:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo
+!i122 1
+R7
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo|
+!s90 -reportprogress|300|D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo|
+!i113 0
+R8
+R2
+vtb_pll
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 znEmT[KPTLI[R9@l6T68b3
+IPNEc><<H>ocCXmD?NMl1h1
+S1
+R0
+w1671053019
+8D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv
+FD:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv
+!i122 3
+L0 10 71
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim|D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

@@ -1,0 +1,148 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do lab2_run_msim_rtl_verilog.do
+# if ![file isdirectory lab2_iputf_libs] {
+# 	file mkdir lab2_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying D:/Intel/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo" 
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:03 on Dec 14,2022
+# vlog -reportprogress 300 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 22:26:03 on Dec 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo"
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:03 on Dec 14,2022
+# vlog -reportprogress 300 D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo 
+# -- Compiling module pll99
+# 
+# Top level modules:
+# 	pll99
+# End time: 22:26:03 on Dec 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:03 on Dec 14,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 22:26:03 on Dec 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim {D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:03 on Dec 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim" D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv 
+# -- Compiling module tb_pll
+# 
+# Top level modules:
+# 	tb_pll
+# End time: 22:26:04 on Dec 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_pll
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_pll 
+# Start time: 22:26:04 on Dec 14,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2685) [TFMPC] - Too few port connections for 'pll99_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/pll99_sim/pll99.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2685) [TFMPC] - Too few port connections for 'pll_altera_pll_altera_pll_i_639'.  Expected 26, found 5.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/ip/pll_sim/pll.vo(46): (vopt-2718) [TFMPC] - Missing connection for port 'refclk1'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "dps_extra_kick(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=44.
+# Loading sv_std.std
+# Loading work.tb_pll(fast)
+# Loading work.pll(fast)
+# Loading altera_lnsim_ver.altera_lnsim_functions(fast)
+# Loading altera_lnsim_ver.altera_pll(fast)
+# Loading altera_lnsim_ver.dps_extra_kick(fast)
+# Loading altera_lnsim_ver.dprio_init(fast)
+# Loading altera_lnsim_ver.altera_generic_pll_functions(fast)
+# Loading altera_lnsim_ver.generic_pll(fast)
+# Loading work.pll99(fast)
+# Loading altera_lnsim_ver.altera_pll(fast__1)
+# Loading altera_lnsim_ver.generic_pll(fast__1)
+# ** Error (suppressible): (vsim-3839) Variable '/tb_pll/locked', driven via a port connection, is multiply driven. See D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll/u_pll99 File: D:/Semestr_5/Programowalne_uklady_logiczne/Verilog/lab2_files/sim/tb_pll.sv Line: 31
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab2_run_msim_rtl_verilog.do PAUSED at line 24
+# End time: 22:26:29 on Dec 14,2022, Elapsed time: 0:00:25
+# Errors: 1, Warnings: 44

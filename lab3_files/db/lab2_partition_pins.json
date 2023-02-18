@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "receiver_rdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "receiver_rdata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "sender_trigger",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

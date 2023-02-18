@@ -1,0 +1,357 @@
+|adder_gen
+inputA[0] => inputA[0].IN1
+inputA[1] => inputA[1].IN1
+inputA[2] => inputA[2].IN1
+inputA[3] => inputA[3].IN1
+inputA[4] => inputA[4].IN1
+inputA[5] => inputA[5].IN1
+inputA[6] => inputA[6].IN1
+inputA[7] => inputA[7].IN1
+inputA[8] => inputA[8].IN1
+inputA[9] => inputA[9].IN1
+inputA[10] => inputA[10].IN1
+inputA[11] => inputA[11].IN1
+inputA[12] => inputA[12].IN1
+inputA[13] => inputA[13].IN1
+inputA[14] => inputA[14].IN1
+inputA[15] => inputA[15].IN1
+inputA[16] => inputA[16].IN1
+inputA[17] => inputA[17].IN1
+inputA[18] => inputA[18].IN1
+inputA[19] => inputA[19].IN1
+inputA[20] => inputA[20].IN1
+inputA[21] => inputA[21].IN1
+inputA[22] => inputA[22].IN1
+inputA[23] => inputA[23].IN1
+inputA[24] => inputA[24].IN1
+inputA[25] => inputA[25].IN1
+inputA[26] => inputA[26].IN1
+inputA[27] => inputA[27].IN1
+inputA[28] => inputA[28].IN1
+inputA[29] => inputA[29].IN1
+inputA[30] => inputA[30].IN1
+inputA[31] => inputA[31].IN1
+inputB[0] => inputB[0].IN1
+inputB[1] => inputB[1].IN1
+inputB[2] => inputB[2].IN1
+inputB[3] => inputB[3].IN1
+inputB[4] => inputB[4].IN1
+inputB[5] => inputB[5].IN1
+inputB[6] => inputB[6].IN1
+inputB[7] => inputB[7].IN1
+inputB[8] => inputB[8].IN1
+inputB[9] => inputB[9].IN1
+inputB[10] => inputB[10].IN1
+inputB[11] => inputB[11].IN1
+inputB[12] => inputB[12].IN1
+inputB[13] => inputB[13].IN1
+inputB[14] => inputB[14].IN1
+inputB[15] => inputB[15].IN1
+inputB[16] => inputB[16].IN1
+inputB[17] => inputB[17].IN1
+inputB[18] => inputB[18].IN1
+inputB[19] => inputB[19].IN1
+inputB[20] => inputB[20].IN1
+inputB[21] => inputB[21].IN1
+inputB[22] => inputB[22].IN1
+inputB[23] => inputB[23].IN1
+inputB[24] => inputB[24].IN1
+inputB[25] => inputB[25].IN1
+inputB[26] => inputB[26].IN1
+inputB[27] => inputB[27].IN1
+inputB[28] => inputB[28].IN1
+inputB[29] => inputB[29].IN1
+inputB[30] => inputB[30].IN1
+inputB[31] => inputB[31].IN1
+cin => carry[0].IN1
+addC[0] <= fadd:fadd_generate[0].inst_GEN.c
+addC[1] <= fadd:fadd_generate[1].inst_GEN.c
+addC[2] <= fadd:fadd_generate[2].inst_GEN.c
+addC[3] <= fadd:fadd_generate[3].inst_GEN.c
+addC[4] <= fadd:fadd_generate[4].inst_GEN.c
+addC[5] <= fadd:fadd_generate[5].inst_GEN.c
+addC[6] <= fadd:fadd_generate[6].inst_GEN.c
+addC[7] <= fadd:fadd_generate[7].inst_GEN.c
+addC[8] <= fadd:fadd_generate[8].inst_GEN.c
+addC[9] <= fadd:fadd_generate[9].inst_GEN.c
+addC[10] <= fadd:fadd_generate[10].inst_GEN.c
+addC[11] <= fadd:fadd_generate[11].inst_GEN.c
+addC[12] <= fadd:fadd_generate[12].inst_GEN.c
+addC[13] <= fadd:fadd_generate[13].inst_GEN.c
+addC[14] <= fadd:fadd_generate[14].inst_GEN.c
+addC[15] <= fadd:fadd_generate[15].inst_GEN.c
+addC[16] <= fadd:fadd_generate[16].inst_GEN.c
+addC[17] <= fadd:fadd_generate[17].inst_GEN.c
+addC[18] <= fadd:fadd_generate[18].inst_GEN.c
+addC[19] <= fadd:fadd_generate[19].inst_GEN.c
+addC[20] <= fadd:fadd_generate[20].inst_GEN.c
+addC[21] <= fadd:fadd_generate[21].inst_GEN.c
+addC[22] <= fadd:fadd_generate[22].inst_GEN.c
+addC[23] <= fadd:fadd_generate[23].inst_GEN.c
+addC[24] <= fadd:fadd_generate[24].inst_GEN.c
+addC[25] <= fadd:fadd_generate[25].inst_GEN.c
+addC[26] <= fadd:fadd_generate[26].inst_GEN.c
+addC[27] <= fadd:fadd_generate[27].inst_GEN.c
+addC[28] <= fadd:fadd_generate[28].inst_GEN.c
+addC[29] <= fadd:fadd_generate[29].inst_GEN.c
+addC[30] <= fadd:fadd_generate[30].inst_GEN.c
+addC[31] <= fadd:fadd_generate[31].inst_GEN.c
+cout <= carry[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[0].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[1].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[2].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[3].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[4].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[5].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[6].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[7].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[8].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[9].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[10].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[11].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[12].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[13].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[14].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[15].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[16].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[17].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[18].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[19].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[20].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[21].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[22].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[23].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[24].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[25].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[26].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[27].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[28].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[29].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[30].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_gen|fadd:fadd_generate[31].inst_GEN
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+c <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
